@@ -27,6 +27,16 @@ Primero clona tu copia del repositorio y entra a la carpeta del proyecto:
 git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPOSITORIO.git
 cd NOMBRE_DEL_REPOSITORIO
 git status
+
+#Crear el entorno virtual
+py -m venv .venv
+
+#Activar el entorno
+.venv\Scripts\activate
+
+#Instalar dependencias
+pip install -r requirements.txt
+
 ```
 
 Después de clonar el repositorio, completa esta sección durante la primera misión con los comandos para crear, activar y preparar el entorno virtual.
