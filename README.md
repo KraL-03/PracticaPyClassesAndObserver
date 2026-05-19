@@ -29,7 +29,7 @@ cd NOMBRE_DEL_REPOSITORIO
 git status
 
 #Crear el entorno virtual
-py -m venv .venv
+python3 -m venv .venv
 
 #Activar el entorno
 .venv\Scripts\activate
