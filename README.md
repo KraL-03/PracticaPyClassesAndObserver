@@ -89,8 +89,16 @@ El patrón Observer separa un objeto que cambia, llamado sujeto observable, de l
 
 En este proyecto:
 
-- `CanalNoticias` es el sujeto observable.
-- `SuscriptorEmail` y `SuscriptorSMS` son observadores.
+- **`CanalNoticias`** es el sujeto observable.
+    - Mantiene una lista de observadores
+    - Permite suscribir y desuscribir observadores
+    - Publica mensajes que se envían automáticamente
+
+- **`SuscriptorEmail` y `SuscriptorSMS`** son observadores.
+    - Implementan el contrato 'Observador' (método 'actualizar')
+    - Reciben notificaciones 
+    - Guardan los mensajes en su propia lista
+    
 - `suscribir` agrega observadores.
 - `desuscribir` elimina observadores.
 - `notificar` llama `actualizar(mensaje)` en cada observador.
@@ -172,4 +180,4 @@ Al terminar las misiones, se creará un issue final de calificación. Ejecuta ma
 
 ## Autores
 
-- Reemplaza esta línea con tu nombre, grupo, curso o rol.
+Daniel Esteban Guzman Rodriguez | 2220241024 | Ingeniería de Software 
